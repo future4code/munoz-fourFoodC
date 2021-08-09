@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+import React from "react";
+import Router from "./Router/Router";
+import GlobalStateProvider from "./GlobalState/GlobalStateProvider";
+import { ThemeProvider } from "@material-ui/core/styles";
+import theme from './Constants/theme'
+
+function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStateProvider>
+        <Router />
+      </GlobalStateProvider>
+    </ThemeProvider>
+=======
 import React from 'react';
 import Address from './Pages/AddressRecord/Address';
 import Feed from './Pages/FeedPage/Feed';
@@ -16,6 +31,7 @@ function App() {
       {/* <Address /> */}
       <Search/>
     </div>
+>>>>>>> a5fea28400229e62d58e5b010c5c9ae61d4b09a8
   );
 }
 
